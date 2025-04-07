@@ -34,7 +34,6 @@ aerial-images-conv/
 
 ### Step 1: Python環境構築 (Ubuntu)
 
-```bash
 python3 -m venv ternaus_env
 source ternaus_env/bin/activate
 pip install -U pip setuptools wheel
@@ -56,6 +55,8 @@ python inference.py
 
 推論結果はdataset/inference_resultsに保存されます。
 
+---
+
 ## 🛠️ 使用技術
 Python 3.10+
 
@@ -67,16 +68,14 @@ OpenCV
 
 USGS航空写真データ
 
+---
 ## 📌 注意点
 現状の精度はプロトタイプ段階のため、学習データ数が少なく限定的です（10枚程度）。
 
 精度向上のためには追加データや解像度の高い航空写真を使用することを推奨します。
 
-## 🚩 今後の改善点
-solarisとSpaceNetモデルを用いた航空写真の事前学習済みモデルをベースに再学習を行い、性能を改善する予定です。
 
-新たな改善は別リポジトリで管理します。
+---
 
 ## 📖 ライセンス
 MIT License
-（詳細はLICENSEを参照）
