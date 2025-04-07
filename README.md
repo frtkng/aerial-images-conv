@@ -16,7 +16,7 @@
 ---
 
 ## 📂 フォルダ構成
-
+```
 aerial-images-conv/
 ├── dataset/
 │   ├── train/          # 学習用画像とマスクデータ
@@ -26,33 +26,33 @@ aerial-images-conv/
 ├── train_simple.py     # TernausNetの簡易学習スクリプト
 ├── inference.py        # TernausNetの推論スクリプト
 └── requirements.txt    # Python環境依存関係
-
+```
 
 ---
 
 ## 🚀 環境セットアップ手順
 
 ### Step 1: Python環境構築 (Ubuntu)
-
+```bash
 python3 -m venv ternaus_env
 source ternaus_env/bin/activate
 pip install -U pip setuptools wheel
 pip install -r requirements.txt
-
+```
 ※事前にCUDA 11.8がインストール済みである必要があります。
 
 ###  Step 2: 学習の実行
-
+```bash
 python train_simple.py
-
+```
 学習が完了すると、ternaus_usgs.pthが生成されます。
 
 
 ### Step 3: 推論の実行
 推論用画像をdataset/inferenceフォルダに格納して実行：
-
+```bash
 python inference.py
-
+```
 推論結果はdataset/inference_resultsに保存されます。
 
 ---
